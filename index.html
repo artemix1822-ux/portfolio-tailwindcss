@@ -474,38 +474,414 @@ scroll-smooth">
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="max-w-5xl mx-auto py-24 px-6">
 
-        <h2 class="text-4xl font-bold mb-8">
-            SKILLS
-        </h2>
+<section id="skills"
+    class="relative py-32 px-6 overflow-hidden">
 
-        <div class="flex flex-wrap gap-4">
+    <!-- MATRIX CANVAS -->
 
-            <span class="border border-green-400 px-4 py-2 hover:bg-green-400 hover:text-black transition">
-                HTML
-            </span>
+    <canvas id="matrixCanvas"
+        class="absolute inset-0 w-full h-full opacity-20 pointer-events-none">
+    </canvas>
 
-            <span class="border border-green-400 px-4 py-2 hover:bg-green-400 hover:text-black transition">
-                Tailwind CSS
-            </span>
+    <!-- CONTENT -->
 
-            <span class="border border-green-400 px-4 py-2 hover:bg-green-400 hover:text-black transition">
-                JavaScript
-            </span>
+    <div class="relative z-10 max-w-7xl mx-auto">
 
-            <span class="border border-green-400 px-4 py-2 hover:bg-green-400 hover:text-black transition">
-                Java
-            </span>
+        <!-- TITLE -->
 
-            <span class="border border-green-400 px-4 py-2 hover:bg-green-400 hover:text-black transition">
-                Git & GitHub
-            </span>
+        <div class="text-center mb-20">
+
+            <p class="uppercase tracking-[0.4em] text-green-300 mb-4">
+                SYSTEM ANALYSIS
+            </p>
+
+            <h2 class="text-5xl md:text-7xl font-black">
+                TECH STACK
+            </h2>
+
+            <p class="mt-8 text-green-200 text-lg max-w-3xl mx-auto leading-8">
+
+                Technologies and tools used to create
+                modern, responsive and interactive web experiences.
+
+            </p>
 
         </div>
 
-    </section>
+        <!-- GRID -->
 
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- CARD -->
+
+            <div
+                class="skill-card bg-black/40 border border-green-500/30
+                backdrop-blur-md rounded-3xl p-8
+                transition duration-500
+                hover:scale-105
+                hover:shadow-[0_0_40px_rgba(34,197,94,0.5)]">
+
+                <div class="flex justify-between items-center">
+
+                    <h3 class="text-3xl font-black">
+                        HTML
+                    </h3>
+
+                    <span class="text-green-300 text-xl">
+                        95%
+                    </span>
+
+                </div>
+
+                <!-- BAR -->
+
+                <div class="w-full h-4 bg-black rounded-full mt-8 overflow-hidden">
+
+                    <div
+                        class="skill-progress h-full bg-green-400 rounded-full"
+                        data-width="95%">
+                    </div>
+
+                </div>
+
+                <p class="mt-8 text-green-200 leading-8">
+
+                    Semantic and responsive frontend structures.
+
+                </p>
+
+            </div>
+
+            <!-- CARD -->
+
+            <div
+                class="skill-card bg-black/40 border border-green-500/30
+                backdrop-blur-md rounded-3xl p-8
+                transition duration-500
+                hover:scale-105
+                hover:shadow-[0_0_40px_rgba(34,197,94,0.5)]">
+
+                <div class="flex justify-between items-center">
+
+                    <h3 class="text-3xl font-black">
+                        Tailwind CSS
+                    </h3>
+
+                    <span class="text-green-300 text-xl">
+                        90%
+                    </span>
+
+                </div>
+
+                <div class="w-full h-4 bg-black rounded-full mt-8 overflow-hidden">
+
+                    <div
+                        class="skill-progress h-full bg-green-400 rounded-full"
+                        data-width="90%">
+                    </div>
+
+                </div>
+
+                <p class="mt-8 text-green-200 leading-8">
+
+                    Modern UI and responsive design systems.
+
+                </p>
+
+            </div>
+
+            <!-- CARD -->
+
+            <div
+                class="skill-card bg-black/40 border border-green-500/30
+                backdrop-blur-md rounded-3xl p-8
+                transition duration-500
+                hover:scale-105
+                hover:shadow-[0_0_40px_rgba(34,197,94,0.5)]">
+
+                <div class="flex justify-between items-center">
+
+                    <h3 class="text-3xl font-black">
+                        JavaScript
+                    </h3>
+
+                    <span class="text-green-300 text-xl">
+                        75%
+                    </span>
+
+                </div>
+
+                <div class="w-full h-4 bg-black rounded-full mt-8 overflow-hidden">
+
+                    <div
+                        class="skill-progress h-full bg-green-400 rounded-full"
+                        data-width="75%">
+                    </div>
+
+                </div>
+
+                <p class="mt-8 text-green-200 leading-8">
+
+                    Interactive interfaces and dynamic animations.
+
+                </p>
+
+            </div>
+
+            <!-- CARD -->
+
+            <div
+                class="skill-card bg-black/40 border border-green-500/30
+                backdrop-blur-md rounded-3xl p-8
+                transition duration-500
+                hover:scale-105
+                hover:shadow-[0_0_40px_rgba(34,197,94,0.5)]">
+
+                <div class="flex justify-between items-center">
+
+                    <h3 class="text-3xl font-black">
+                        Java
+                    </h3>
+
+                    <span class="text-green-300 text-xl">
+                        80%
+                    </span>
+
+                </div>
+
+                <div class="w-full h-4 bg-black rounded-full mt-8 overflow-hidden">
+
+                    <div
+                        class="skill-progress h-full bg-green-400 rounded-full"
+                        data-width="80%">
+                    </div>
+
+                </div>
+
+                <p class="mt-8 text-green-200 leading-8">
+
+                    Object-oriented programming and backend logic.
+
+                </p>
+
+            </div>
+
+            <!-- CARD -->
+
+            <div
+                class="skill-card bg-black/40 border border-green-500/30
+                backdrop-blur-md rounded-3xl p-8
+                transition duration-500
+                hover:scale-105
+                hover:shadow-[0_0_40px_rgba(34,197,94,0.5)]">
+
+                <div class="flex justify-between items-center">
+
+                    <h3 class="text-3xl font-black">
+                        Git & GitHub
+                    </h3>
+
+                    <span class="text-green-300 text-xl">
+                        70%
+                    </span>
+
+                </div>
+
+                <div class="w-full h-4 bg-black rounded-full mt-8 overflow-hidden">
+
+                    <div
+                        class="skill-progress h-full bg-green-400 rounded-full"
+                        data-width="70%">
+                    </div>
+
+                </div>
+
+                <p class="mt-8 text-green-200 leading-8">
+
+                    Version control and collaborative workflow.
+
+                </p>
+
+            </div>
+
+            <!-- CARD -->
+
+            <div
+                class="skill-card bg-black/40 border border-green-500/30
+                backdrop-blur-md rounded-3xl p-8
+                transition duration-500
+                hover:scale-105
+                hover:shadow-[0_0_40px_rgba(34,197,94,0.5)]">
+
+                <div class="flex justify-between items-center">
+
+                    <h3 class="text-3xl font-black">
+                        Cybersecurity
+                    </h3>
+
+                    <span class="text-green-300 text-xl">
+                        65%
+                    </span>
+
+                </div>
+
+                <div class="w-full h-4 bg-black rounded-full mt-8 overflow-hidden">
+
+                    <div
+                        class="skill-progress h-full bg-green-400 rounded-full"
+                        data-width="65%">
+                    </div>
+
+                </div>
+
+                <p class="mt-8 text-green-200 leading-8">
+
+                    Secure systems and cybersecurity fundamentals.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SOUND -->
+
+<audio id="hoverSound" preload="auto">
+    <source src="./sounds/hover.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
+
+<script>
+
+    // MATRIX EFFECT
+
+    const canvas = document.getElementById("matrixCanvas");
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const letters = "01";
+    const fontSize = 14;
+
+    const columns = canvas.width / fontSize;
+
+    const drops = [];
+
+    for (let i = 0; i < columns; i++) {
+
+        drops[i] = 1;
+
+    }
+
+    function drawMatrix() {
+
+        ctx.fillStyle = "rgba(0,0,0,0.08)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "#22c55e";
+        ctx.font = fontSize + "px monospace";
+
+        for (let i = 0; i < drops.length; i++) {
+
+            const text = letters.charAt(
+                Math.floor(Math.random() * letters.length)
+            );
+
+            ctx.fillText(
+                text,
+                i * fontSize,
+                drops[i] * fontSize
+            );
+
+            if (
+                drops[i] * fontSize > canvas.height &&
+                Math.random() > 0.975
+            ) {
+
+                drops[i] = 0;
+
+            }
+
+            drops[i]++;
+
+        }
+
+    }
+
+    const matrixInterval = setInterval(drawMatrix, 40);
+
+    // STOP MATRIX AFTER 5s
+
+    setTimeout(() => {
+
+        clearInterval(matrixInterval);
+
+        canvas.style.display = "none";
+
+    }, 5000);
+
+    // SKILL BAR ANIMATION
+
+    const skillBars = document.querySelectorAll(".skill-progress");
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                const bar = entry.target;
+
+                const width = bar.getAttribute("data-width");
+
+                bar.style.width = width;
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.5
+    });
+
+    skillBars.forEach(bar => {
+
+        bar.style.width = "0%";
+
+        bar.style.transition = "width 2s ease";
+
+        observer.observe(bar);
+
+    });
+
+    // SOUND EFFECT
+
+    const hoverSound = document.getElementById("hoverSound");
+
+    const cards = document.querySelectorAll(".skill-card");
+
+    cards.forEach(card => {
+
+        card.addEventListener("mouseenter", () => {
+
+            hoverSound.currentTime = 0;
+
+            hoverSound.play();
+
+        });
+
+    });
+
+</script>
     <!-- PROJECTS -->
     <section id="projects" class="max-w-5xl mx-auto py-24 px-6">
 
