@@ -27,7 +27,7 @@ scroll-smooth">
         <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
 
             <h1 class="text-2xl font-bold">
-                LUC.exe
+                GRAY.ATEŞ
             </h1>
 
             <ul class="flex gap-6 text-sm md:text-lg">
@@ -63,24 +63,204 @@ scroll-smooth">
     </header>
 
     <!-- HERO SECTION -->
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+<section
+    class="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden px-6">
 
-        <h1 class="text-5xl md:text-8xl font-bold">
-            CYBER SECURITY
-        </h1>
+    <!-- GLOW EFFECT -->
+    <div
+        class="absolute w-[500px] h-[500px] bg-green-500/20 blur-3xl rounded-full animate-pulse">
+    </div>
 
-        <p class="mt-6 text-lg md:text-2xl text-green-300">
-            Frontend Developer • Computer Engineering Student
+    <!-- FAKE TERMINAL -->
+    <div
+        class="absolute top-10 left-6 md:left-10 border border-green-500 bg-black/70 backdrop-blur-md p-4 w-[320px] hidden md:block shadow-[0_0_20px_#22c55e]">
+
+        <p class="text-green-400 text-sm">
+            root@GRAY:~#
         </p>
 
-        <button
-            class="mt-8 border border-green-400 px-6 py-3 hover:bg-green-400 hover:text-black transition duration-300 hover:scale-105">
+        <p id="terminal-text" class="text-green-300 text-sm mt-2">
+        </p>
 
-            ACCESS PORTFOLIO
+    </div>
 
-        </button>
+    <!-- MAIN CONTENT -->
+    <div class="relative z-10">
 
-    </section>
+        <p class="uppercase tracking-[0.4em] text-green-300 mb-6 animate-pulse">
+            ACCESS GRANTED
+        </p>
+
+        <h1
+            class="text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-tight">
+
+            GRAY
+
+            <span
+                class="text-white drop-shadow-[0_0_15px_#22c55e]">
+                KINHO
+            </span>
+
+        </h1>
+
+        <!-- TYPING EFFECT -->
+        <h2
+            class="mt-6 text-xl md:text-3xl text-green-300 font-semibold">
+
+            <span id="typing-text"></span>
+            <span class="animate-pulse">|</span>
+
+        </h2>
+
+        <p
+            class="mt-8 max-w-3xl text-lg md:text-xl text-green-200 leading-8 mx-auto">
+
+            Computer Engineering Student focused on
+            Frontend Development, Cybersecurity,
+            Modern Interfaces and Interactive Web Experiences.
+
+        </p>
+
+        <!-- BUTTONS -->
+        <div
+            class="flex flex-wrap justify-center gap-6 mt-12">
+
+            <a href="#projects"
+                class="px-8 py-4 border border-green-400
+                hover:bg-green-400
+                hover:text-black
+                transition duration-300
+                hover:scale-110
+                shadow-[0_0_20px_#22c55e]">
+
+                View Projects
+
+            </a>
+
+            <a href="#contact"
+                class="px-8 py-4 border border-white
+                hover:bg-white
+                hover:text-black
+                transition duration-300
+                hover:scale-110">
+
+                Contact Me
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- SCROLL INDICATOR -->
+    <div
+        class="absolute bottom-10 flex flex-col items-center text-green-300 animate-bounce">
+
+        <p class="text-sm tracking-[0.3em]">
+            SCROLL
+        </p>
+
+        <div class="w-[1px] h-10 bg-green-400 mt-2"></div>
+
+    </div>
+
+</section>
+
+<!-- JAVASCRIPT -->
+<script>
+
+    // HERO TYPING EFFECT
+
+    const texts = [
+        "Frontend Developer",
+        "Cybersecurity Enthusiast",
+        "Computer Engineering Student",
+        "Tailwind CSS Designer"
+    ];
+
+    let speed = 100;
+    let textIndex = 0;
+    let charIndex = 0;
+
+    const typingText = document.getElementById("typing-text");
+
+    function typeEffect() {
+
+        if (charIndex < texts[textIndex].length) {
+
+            typingText.textContent += texts[textIndex].charAt(charIndex);
+
+            charIndex++;
+
+            setTimeout(typeEffect, speed);
+
+        } else {
+
+            setTimeout(eraseEffect, 1500);
+
+        }
+
+    }
+
+    function eraseEffect() {
+
+        if (charIndex > 0) {
+
+            typingText.textContent = texts[textIndex].substring(0, charIndex - 1);
+
+            charIndex--;
+
+            setTimeout(eraseEffect, 50);
+
+        } else {
+
+            textIndex++;
+
+            if (textIndex >= texts.length) {
+
+                textIndex = 0;
+
+            }
+
+            setTimeout(typeEffect, 500);
+
+        }
+
+    }
+
+    typeEffect();
+
+    // TERMINAL EFFECT
+
+    const terminal = document.getElementById("terminal-text");
+
+    const commands = [
+        "Initializing portfolio...",
+        "Loading cybersecurity interface...",
+        "Connecting to GitHub...",
+        "Deploying frontend assets...",
+        "System online."
+    ];
+
+    let commandIndex = 0;
+
+    function terminalEffect() {
+
+        terminal.textContent = commands[commandIndex];
+
+        commandIndex++;
+
+        if (commandIndex >= commands.length) {
+
+            commandIndex = 0;
+
+        }
+
+    }
+
+    setInterval(terminalEffect, 2000);
+
+</script>
 
     <!-- ABOUT -->
     <section id="about" class="max-w-5xl mx-auto py-24 px-6">
@@ -113,7 +293,7 @@ scroll-smooth">
             </h3>
 
             <p class="mt-2 text-green-200">
-                First Year Student
+                Sephomore  Student
             </p>
 
         </div>
