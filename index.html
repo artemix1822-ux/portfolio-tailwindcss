@@ -883,47 +883,462 @@ scroll-smooth">
 
 </script>
     <!-- PROJECTS -->
-    <section id="projects" class="max-w-5xl mx-auto py-24 px-6">
 
-        <h2 class="text-4xl font-bold mb-8">
-            PROJECTS
-        </h2>
+<section id="projects"
+    class="relative py-32 px-6 overflow-hidden">
 
-        <div class="grid md:grid-cols-2 gap-8">
+    <!-- BACKGROUND GLOW -->
 
+    <div
+        class="absolute top-1/2 left-1/2
+        -translate-x-1/2 -translate-y-1/2
+        w-[800px] h-[800px]
+        bg-green-500/10
+        blur-3xl rounded-full">
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="relative z-10 max-w-7xl mx-auto">
+
+        <!-- TITLE -->
+
+        <div class="text-center mb-24">
+
+            <p class="uppercase tracking-[0.4em] text-green-300 mb-4">
+                Featured Projects
+            </p>
+
+            <h2 class="text-5xl md:text-7xl font-black">
+
+                DIGITAL OPERATIONS
+
+            </h2>
+
+            <p class="mt-8 text-green-200 text-lg max-w-3xl mx-auto leading-8">
+
+                A selection of modern, responsive and interactive
+                projects focused on frontend development and software engineering.
+
+            </p>
+
+        </div>
+
+        <!-- PROJECT GRID -->
+
+        <div class="grid lg:grid-cols-3 gap-10">
+
+            <!-- ========================= -->
             <!-- PROJECT 1 -->
-            <div class="border border-green-500 p-6 bg-black/40 backdrop-blur-md hover:scale-105 transition duration-300">
+            <!-- ========================= -->
 
-                <h3 class="text-2xl font-bold">
-                    Portfolio Website
-                </h3>
+            <div
+                class="project-card group
+                relative overflow-hidden
+                rounded-3xl
+                border border-green-500/30
+                bg-black/40
+                backdrop-blur-md
+                transition duration-500
+                hover:scale-105
+                hover:shadow-[0_0_40px_rgba(34,197,94,0.5)]">
 
-                <p class="mt-4 text-green-200">
+                <!-- IMAGE -->
 
-                    Modern responsive portfolio built with Tailwind CSS.
+                <div class="relative overflow-hidden">
 
-                </p>
+                    <img
+                        src="./images/project1.jpg"
+                        class="w-full h-[250px] object-cover
+                        transition duration-700
+                        group-hover:scale-110">
+
+                    <!-- OVERLAY -->
+
+                    <div
+                        class="absolute inset-0
+                        bg-gradient-to-t
+                        from-black
+                        via-black/30
+                        to-transparent">
+                    </div>
+
+                    <!-- SCAN EFFECT -->
+
+                    <div
+                        class="absolute inset-0
+                        bg-gradient-to-b
+                        from-transparent
+                        via-green-400/10
+                        to-transparent
+                        translate-y-[-100%]
+                        group-hover:translate-y-[100%]
+                        transition duration-1000">
+                    </div>
+
+                </div>
+
+                <!-- CONTENT -->
+
+                <div class="p-8">
+
+                    <p class="text-green-300 uppercase tracking-[0.3em] text-sm">
+                        Frontend
+                    </p>
+
+                    <h3 class="text-3xl font-black mt-4">
+
+                        Cyber Portfolio
+
+                    </h3>
+
+                    <p class="mt-6 text-green-200 leading-8">
+
+                        Modern cybersecurity-inspired portfolio built with
+                        Tailwind CSS, JavaScript animations and responsive design.
+
+                    </p>
+
+                    <!-- TECH -->
+
+                    <div class="flex flex-wrap gap-3 mt-8">
+
+                        <span class="border border-green-400 px-3 py-1 text-sm">
+                            HTML
+                        </span>
+
+                        <span class="border border-green-400 px-3 py-1 text-sm">
+                            Tailwind
+                        </span>
+
+                        <span class="border border-green-400 px-3 py-1 text-sm">
+                            JavaScript
+                        </span>
+
+                    </div>
+
+                    <!-- BUTTONS -->
+
+                    <div class="flex gap-4 mt-10">
+
+                        <a href="#"
+                            class="project-btn border border-green-400
+                            px-6 py-3
+                            hover:bg-green-400
+                            hover:text-black
+                            transition duration-300">
+
+                            GitHub
+
+                        </a>
+
+                        <a href="#"
+                            class="project-btn border border-white
+                            px-6 py-3
+                            hover:bg-white
+                            hover:text-black
+                            transition duration-300">
+
+                            Live Demo
+
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
+            <!-- ========================= -->
             <!-- PROJECT 2 -->
-            <div class="border border-green-500 p-6 bg-black/40 backdrop-blur-md hover:scale-105 transition duration-300">
+            <!-- ========================= -->
 
-                <h3 class="text-2xl font-bold">
-                    Java Student Management
-                </h3>
+            <div
+                class="project-card group
+                relative overflow-hidden
+                rounded-3xl
+                border border-green-500/30
+                bg-black/40
+                backdrop-blur-md
+                transition duration-500
+                hover:scale-105
+                hover:shadow-[0_0_40px_rgba(34,197,94,0.5)]">
 
-                <p class="mt-4 text-green-200">
+                <div class="relative overflow-hidden">
 
-                    Java application for managing students and grades.
+                    <img
+                        src="./images/project2.jpg"
+                        class="w-full h-[250px] object-cover
+                        transition duration-700
+                        group-hover:scale-110">
 
-                </p>
+                    <div
+                        class="absolute inset-0
+                        bg-gradient-to-t
+                        from-black
+                        via-black/30
+                        to-transparent">
+                    </div>
+
+                    <div
+                        class="absolute inset-0
+                        bg-gradient-to-b
+                        from-transparent
+                        via-green-400/10
+                        to-transparent
+                        translate-y-[-100%]
+                        group-hover:translate-y-[100%]
+                        transition duration-1000">
+                    </div>
+
+                </div>
+
+                <div class="p-8">
+
+                    <p class="text-green-300 uppercase tracking-[0.3em] text-sm">
+                        Java Project
+                    </p>
+
+                    <h3 class="text-3xl font-black mt-4">
+
+                        Student Management
+
+                    </h3>
+
+                    <p class="mt-6 text-green-200 leading-8">
+
+                        Java application designed for managing students,
+                        grades and academic information using OOP concepts.
+
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 mt-8">
+
+                        <span class="border border-green-400 px-3 py-1 text-sm">
+                            Java
+                        </span>
+
+                        <span class="border border-green-400 px-3 py-1 text-sm">
+                            OOP
+                        </span>
+
+                        <span class="border border-green-400 px-3 py-1 text-sm">
+                            Algorithms
+                        </span>
+
+                    </div>
+
+                    <div class="flex gap-4 mt-10">
+
+                        <a href="#"
+                            class="project-btn border border-green-400
+                            px-6 py-3
+                            hover:bg-green-400
+                            hover:text-black
+                            transition duration-300">
+
+                            GitHub
+
+                        </a>
+
+                        <a href="#"
+                            class="project-btn border border-white
+                            px-6 py-3
+                            hover:bg-white
+                            hover:text-black
+                            transition duration-300">
+
+                            Live Demo
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ========================= -->
+            <!-- PROJECT 3 -->
+            <!-- ========================= -->
+
+            <div
+                class="project-card group
+                relative overflow-hidden
+                rounded-3xl
+                border border-green-500/30
+                bg-black/40
+                backdrop-blur-md
+                transition duration-500
+                hover:scale-105
+                hover:shadow-[0_0_40px_rgba(34,197,94,0.5)]">
+
+                <div class="relative overflow-hidden">
+
+                    <img
+                        src="./images/project3.jpg"
+                        class="w-full h-[250px] object-cover
+                        transition duration-700
+                        group-hover:scale-110">
+
+                    <div
+                        class="absolute inset-0
+                        bg-gradient-to-t
+                        from-black
+                        via-black/30
+                        to-transparent">
+                    </div>
+
+                    <div
+                        class="absolute inset-0
+                        bg-gradient-to-b
+                        from-transparent
+                        via-green-400/10
+                        to-transparent
+                        translate-y-[-100%]
+                        group-hover:translate-y-[100%]
+                        transition duration-1000">
+                    </div>
+
+                </div>
+
+                <div class="p-8">
+
+                    <p class="text-green-300 uppercase tracking-[0.3em] text-sm">
+                        JavaScript
+                    </p>
+
+                    <h3 class="text-3xl font-black mt-4">
+
+                        Cyber Calculator
+
+                    </h3>
+
+                    <p class="mt-6 text-green-200 leading-8">
+
+                        Futuristic calculator interface with animations,
+                        neon effects and interactive JavaScript logic.
+
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 mt-8">
+
+                        <span class="border border-green-400 px-3 py-1 text-sm">
+                            JavaScript
+                        </span>
+
+                        <span class="border border-green-400 px-3 py-1 text-sm">
+                            UI/UX
+                        </span>
+
+                        <span class="border border-green-400 px-3 py-1 text-sm">
+                            Responsive
+                        </span>
+
+                    </div>
+
+                    <div class="flex gap-4 mt-10">
+
+                        <a href="#"
+                            class="project-btn border border-green-400
+                            px-6 py-3
+                            hover:bg-green-400
+                            hover:text-black
+                            transition duration-300">
+
+                            GitHub
+
+                        </a>
+
+                        <a href="#"
+                            class="project-btn border border-white
+                            px-6 py-3
+                            hover:bg-white
+                            hover:text-black
+                            transition duration-300">
+
+                            Live Demo
+
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
+
+<!-- SOUND -->
+
+<audio id="projectSound" preload="auto">
+    <source src="./sounds/hover.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
+
+<script>
+
+    // SOUND EFFECT
+
+    const projectSound = document.getElementById("projectSound");
+
+    const projectCards = document.querySelectorAll(".project-card");
+
+    projectCards.forEach(card => {
+
+        card.addEventListener("mouseenter", () => {
+
+            projectSound.currentTime = 0;
+
+            projectSound.play();
+
+        });
+
+    });
+
+    // SCROLL REVEAL
+
+    const revealCards = document.querySelectorAll(".project-card");
+
+    const revealObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add(
+                    "translate-y-0",
+                    "opacity-100"
+                );
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.2
+    });
+
+    revealCards.forEach(card => {
+
+        card.classList.add(
+            "translate-y-20",
+            "opacity-0"
+        );
+
+        card.style.transition = "all 1s ease";
+
+        revealObserver.observe(card);
+
+    });
+    </script>
 
     <!-- CONTACT -->
     <section id="contact" class="max-w-5xl mx-auto py-24 px-6">
