@@ -1,17 +1,267 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Portfolio Gray</title>
 
-  <link href="output.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="output.css">
+
+    <title>GRAY Portfolio</title>
 </head>
 
-<body>
+<body class="min-h-screen
+bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./images/background.jpg')]
+bg-cover
+bg-center
+bg-no-repeat
+bg-fixed
+text-green-400
+font-mono
+scroll-smooth">
 
-  <h1 class="text-3xl text-blue-500 font-bold">
-    Mon Portfolio 
-  </h1>
+    <!-- HEADER -->
+    <header class="fixed top-0 w-full bg-black/40 backdrop-blur-md border-b border-green-500 z-50">
+
+        <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+            <h1 class="text-2xl font-bold">
+                LUC.exe
+            </h1>
+
+            <ul class="flex gap-6 text-sm md:text-lg">
+
+                <li>
+                    <a href="#about" class="hover:text-white transition">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="hover:text-white transition">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="hover:text-white transition">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="hover:text-white transition">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+
+        <h1 class="text-5xl md:text-8xl font-bold">
+            CYBER SECURITY
+        </h1>
+
+        <p class="mt-6 text-lg md:text-2xl text-green-300">
+            Frontend Developer • Computer Engineering Student
+        </p>
+
+        <button
+            class="mt-8 border border-green-400 px-6 py-3 hover:bg-green-400 hover:text-black transition duration-300 hover:scale-105">
+
+            ACCESS PORTFOLIO
+
+        </button>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-5xl mx-auto py-24 px-6">
+
+        <h2 class="text-4xl font-bold mb-8">
+            ABOUT ME
+        </h2>
+
+        <p class="text-lg leading-8 text-green-200">
+
+            I am a computer engineering student passionate about web development,
+            cybersecurity and modern technologies. I enjoy building modern,
+            responsive and interactive web interfaces using Tailwind CSS.
+
+        </p>
+
+    </section>
+
+    <!-- FORMATION -->
+    <section class="max-w-5xl mx-auto py-24 px-6">
+
+        <h2 class="text-4xl font-bold mb-8">
+            EDUCATION
+        </h2>
+
+        <div class="border border-green-500 p-6 bg-black/40 backdrop-blur-md">
+
+            <h3 class="text-2xl font-bold">
+                Computer Engineering
+            </h3>
+
+            <p class="mt-2 text-green-200">
+                First Year Student
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="max-w-5xl mx-auto py-24 px-6">
+
+        <h2 class="text-4xl font-bold mb-8">
+            EXPERIENCE
+        </h2>
+
+        <div class="border border-green-500 p-6 bg-black/40 backdrop-blur-md">
+
+            <h3 class="text-2xl font-bold">
+                Academic & Personal Projects
+            </h3>
+
+            <p class="mt-4 text-green-200">
+
+                Creation of responsive websites, Java projects,
+                algorithmic exercises and frontend interfaces.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="max-w-5xl mx-auto py-24 px-6">
+
+        <h2 class="text-4xl font-bold mb-8">
+            SKILLS
+        </h2>
+
+        <div class="flex flex-wrap gap-4">
+
+            <span class="border border-green-400 px-4 py-2 hover:bg-green-400 hover:text-black transition">
+                HTML
+            </span>
+
+            <span class="border border-green-400 px-4 py-2 hover:bg-green-400 hover:text-black transition">
+                Tailwind CSS
+            </span>
+
+            <span class="border border-green-400 px-4 py-2 hover:bg-green-400 hover:text-black transition">
+                JavaScript
+            </span>
+
+            <span class="border border-green-400 px-4 py-2 hover:bg-green-400 hover:text-black transition">
+                Java
+            </span>
+
+            <span class="border border-green-400 px-4 py-2 hover:bg-green-400 hover:text-black transition">
+                Git & GitHub
+            </span>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="max-w-5xl mx-auto py-24 px-6">
+
+        <h2 class="text-4xl font-bold mb-8">
+            PROJECTS
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- PROJECT 1 -->
+            <div class="border border-green-500 p-6 bg-black/40 backdrop-blur-md hover:scale-105 transition duration-300">
+
+                <h3 class="text-2xl font-bold">
+                    Portfolio Website
+                </h3>
+
+                <p class="mt-4 text-green-200">
+
+                    Modern responsive portfolio built with Tailwind CSS.
+
+                </p>
+
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="border border-green-500 p-6 bg-black/40 backdrop-blur-md hover:scale-105 transition duration-300">
+
+                <h3 class="text-2xl font-bold">
+                    Java Student Management
+                </h3>
+
+                <p class="mt-4 text-green-200">
+
+                    Java application for managing students and grades.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-5xl mx-auto py-24 px-6">
+
+        <h2 class="text-4xl font-bold mb-8">
+            CONTACT
+        </h2>
+
+        <form class="flex flex-col gap-6 max-w-2xl">
+
+            <input type="text"
+                placeholder="Your Name"
+                class="bg-black/50 border border-green-500 p-4 outline-none">
+
+            <input type="email"
+                placeholder="Your Email"
+                class="bg-black/50 border border-green-500 p-4 outline-none">
+
+            <textarea
+                placeholder="Your Message"
+                rows="6"
+                class="bg-black/50 border border-green-500 p-4 outline-none"></textarea>
+
+            <button
+                class="border border-green-400 px-6 py-3 hover:bg-green-400 hover:text-black transition duration-300">
+
+                SEND MESSAGE
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-green-500 text-center py-6 bg-black/40 backdrop-blur-md">
+
+        <p>
+            © 2026 KINHO GRAY Portfolio • All Rights Reserved
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
