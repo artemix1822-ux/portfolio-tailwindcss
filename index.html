@@ -21,13 +21,22 @@ text-green-400
 font-mono
 scroll-smooth">
 
+<audio id="startupSound" preload="auto">
+    <source src="./sounds/hover.mp3" type="audio/mpeg">
+</audio>
+
+<!-- MATRIX OVERLAY -->
+
+<canvas id="startupMatrix"
+class="fixed inset-0 w-full h-full z-[9999] pointer-events-none opacity-30">
+</canvas>
     <!-- HEADER -->
     <header class="fixed top-0 w-full bg-black/40 backdrop-blur-md border-b border-green-500 z-50">
 
         <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
 
             <h1 class="text-2xl font-bold">
-                GRAY.ATEŞ
+                GRAY.Acces 
             </h1>
 
             <ul class="flex gap-6 text-sm md:text-lg">
@@ -1341,38 +1350,267 @@ scroll-smooth">
     </script>
 
     <!-- CONTACT -->
-    <section id="contact" class="max-w-5xl mx-auto py-24 px-6">
+   <!-- ========================= -->
+<!-- CONTACT SECTION -->
+<!-- ========================= -->
 
-        <h2 class="text-4xl font-bold mb-8">
-            CONTACT
-        </h2>
+<section id="contact"
+    class="relative py-32 px-6 overflow-hidden">
 
-        <form class="flex flex-col gap-6 max-w-2xl">
+    <!-- BACKGROUND GLOW -->
 
-            <input type="text"
-                placeholder="Your Name"
-                class="bg-black/50 border border-green-500 p-4 outline-none">
+    <div
+        class="absolute top-1/2 left-1/2
+        -translate-x-1/2 -translate-y-1/2
+        w-[700px] h-[700px]
+        bg-green-500/10
+        blur-3xl rounded-full">
+    </div>
 
-            <input type="email"
-                placeholder="Your Email"
-                class="bg-black/50 border border-green-500 p-4 outline-none">
+    <!-- CONTENT -->
 
-            <textarea
-                placeholder="Your Message"
-                rows="6"
-                class="bg-black/50 border border-green-500 p-4 outline-none"></textarea>
+    <div class="relative z-10 max-w-7xl mx-auto">
 
-            <button
-                class="border border-green-400 px-6 py-3 hover:bg-green-400 hover:text-black transition duration-300">
+        <!-- TITLE -->
 
-                SEND MESSAGE
+        <div class="text-center mb-20">
 
-            </button>
+            <p class="uppercase tracking-[0.4em] text-green-300 mb-4">
+                Secure Connection
+            </p>
 
-        </form>
+            <h2 class="text-5xl md:text-7xl font-black">
 
-    </section>
+                CONTACT TERMINAL
 
+            </h2>
+
+            <p class="mt-8 text-green-200 text-lg max-w-3xl mx-auto leading-8">
+
+                Interested in collaboration, development or innovative projects?
+                Let’s establish a secure connection.
+
+            </p>
+
+        </div>
+
+        <!-- GRID -->
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- LEFT SIDE -->
+
+            <div
+                class="bg-black/40
+                border border-green-500/30
+                backdrop-blur-md
+                rounded-3xl
+                p-10
+                shadow-[0_0_40px_rgba(34,197,94,0.2)]">
+
+                <h3 class="text-3xl font-black mb-10">
+
+                    Communication Channel
+
+                </h3>
+
+                <!-- INFO -->
+
+                <div class="space-y-8">
+
+                    <div>
+
+                        <p class="text-green-300 uppercase tracking-[0.3em] text-sm">
+                            Email
+                        </p>
+
+                        <p class="mt-2 text-xl">
+                            artemix1822@gmail.com
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <p class="text-green-300 uppercase tracking-[0.3em] text-sm">
+                            Location
+                        </p>
+
+                        <p class="mt-2 text-xl">
+                            Senegal
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <p class="text-green-300 uppercase tracking-[0.3em] text-sm">
+                            Availability
+                        </p>
+
+                        <p class="mt-2 text-xl">
+                            Open To Opportunities
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- SOCIALS -->
+
+                <div class="flex gap-6 mt-12 flex-wrap">
+
+                    <a href="#"
+                        class="social-btn border border-green-400
+                        px-6 py-3
+                        hover:bg-green-400
+                        hover:text-black
+                        transition duration-300">
+
+                        GitHub
+
+                    </a>
+
+                    <a href="#"
+                        class="social-btn border border-white
+                        px-6 py-3
+                        hover:bg-white
+                        hover:text-black
+                        transition duration-300">
+
+                        LinkedIn
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <form
+                class="bg-black/40
+                border border-green-500/30
+                backdrop-blur-md
+                rounded-3xl
+                p-10
+                shadow-[0_0_40px_rgba(34,197,94,0.2)]
+                space-y-8">
+
+                <!-- INPUT -->
+
+                <div>
+
+                    <label class="block mb-3 text-green-300 uppercase tracking-[0.2em] text-sm">
+
+                        Name
+
+                    </label>
+
+                    <input type="text"
+                        placeholder="Enter your name"
+                        class="w-full bg-black/50 border border-green-500/30
+                        rounded-xl p-4 outline-none
+                        focus:border-green-400
+                        focus:shadow-[0_0_20px_rgba(34,197,94,0.4)]
+                        transition duration-300">
+
+                </div>
+
+                <!-- EMAIL -->
+
+                <div>
+
+                    <label class="block mb-3 text-green-300 uppercase tracking-[0.2em] text-sm">
+
+                        Email
+
+                    </label>
+
+                    <input type="email"
+                        placeholder="Enter your email"
+                        class="w-full bg-black/50 border border-green-500/30
+                        rounded-xl p-4 outline-none
+                        focus:border-green-400
+                        focus:shadow-[0_0_20px_rgba(34,197,94,0.4)]
+                        transition duration-300">
+
+                </div>
+
+                <!-- MESSAGE -->
+
+                <div>
+
+                    <label class="block mb-3 text-green-300 uppercase tracking-[0.2em] text-sm">
+
+                        Message
+
+                    </label>
+
+                    <textarea
+                        rows="6"
+                        placeholder="Write your message..."
+                        class="w-full bg-black/50 border border-green-500/30
+                        rounded-xl p-4 outline-none
+                        focus:border-green-400
+                        focus:shadow-[0_0_20px_rgba(34,197,94,0.4)]
+                        transition duration-300"></textarea>
+
+                </div>
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="contact-btn w-full border border-green-400
+                    py-4 text-lg font-bold
+                    hover:bg-green-400
+                    hover:text-black
+                    transition duration-300
+                    hover:scale-[1.02]
+                    shadow-[0_0_20px_rgba(34,197,94,0.3)]">
+
+                    INITIATE CONNECTION
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SOUND -->
+
+<audio id="contactSound" preload="auto">
+    <source src="./sounds/hover.mp3" type="audio/mpeg">
+</audio>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+    const contactSound = document.getElementById("contactSound");
+
+    const buttons = document.querySelectorAll(
+        ".contact-btn, .social-btn"
+    );
+
+    buttons.forEach(button => {
+
+        button.addEventListener("mouseenter", () => {
+
+            contactSound.currentTime = 0;
+
+            contactSound.play();
+
+        });
+
+    });
+
+</script>
     <!-- FOOTER -->
     <footer class="border-t border-green-500 text-center py-6 bg-black/40 backdrop-blur-md">
 
@@ -1382,6 +1620,144 @@ scroll-smooth">
 
     </footer>
 
+<script>
+    // STARTUP MATRIX
+    
+
+    const startupCanvas =
+        document.getElementById("startupMatrix");
+
+    const startupCtx =
+        startupCanvas.getContext("2d");
+
+    startupCanvas.width = window.innerWidth;
+    startupCanvas.height = window.innerHeight;
+
+    const letter = "01";
+    const startupfontSize  = 16;
+
+    const column=
+        startupCanvas.width / startupfontSize;
+
+    const drop = [];
+
+    for (let i = 0; i < columns; i++) {
+
+        drops[i] = 1;
+
+    }
+
+    function drawStartupMatrix() {
+
+        startupCtx.fillStyle =
+            "rgba(0,0,0,0.08)";
+
+        startupCtx.fillRect(
+            0,
+            0,
+            startupCanvas.width,
+            startupCanvas.height
+        );
+
+        startupCtx.fillStyle = "#22c55e";
+
+        startupCtx.font =
+            startupfontSize + "px monospace";
+
+        for (let i = 0; i < drops.length; i++) {
+
+            const text =
+                letters.charAt(
+                    Math.floor(
+                        Math.random() *
+                        letters.length
+                    )
+                );
+
+            startupCtx.fillText(
+                text,
+                i * startupfontSize,
+                drops[i] * fontSize
+            );
+
+            if (
+                drops[i] * fontSize >
+                startupCanvas.height &&
+                Math.random() > 0.975
+            ) {
+
+                drops[i] = 0;
+
+            }
+
+            drops[i]++;
+
+        }
+
+    }
+
+    const startupInterval =
+        setInterval(drawStartupMatrix, 40);
+
+    // =========================
+    // STARTUP SOUND
+    // =========================
+
+    const startupSound =
+document.getElementById("startupSound");
+
+    // PLAY AFTER PAGE LOAD
+
+   function startAudio() {
+
+    startupSound.volume = 1;
+
+    startupSound.play();
+
+    document.removeEventListener(
+        "mousemove",
+        startAudio
+    );
+
+    document.removeEventListener(
+        "click",
+        startAudio
+    );
+
+}
+
+document.addEventListener(
+    "mousemove",
+    startAudio
+);
+
+document.addEventListener(
+    "click",
+    startAudio
+);
+
+    // =========================
+    // REMOVE MATRIX AFTER 3s
+    // =========================
+
+    setTimeout(() => {
+
+        clearInterval(startupInterval);
+
+        startupCanvas.style.transition =
+            "opacity 1s ease";
+
+        startupCanvas.style.opacity = "0";
+
+        setTimeout(() => {
+
+            startupCanvas.style.display = "none";
+
+        }, 1000);
+
+    }, 3000);   
+
+</script>
 </body>
 
 </html>
